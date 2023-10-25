@@ -1,0 +1,7 @@
+C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\bin\Debug\ValidaNota.exe.config
+C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\bin\Debug\ValidaNota.exe
+C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\bin\Debug\ValidaNota.pdb
+C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\obj\Debug\ValidaNota.csproj.AssemblyReference.cache
+C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\obj\Debug\ValidaNota.csproj.CoreCompileInputs.cache
+C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\obj\Debug\ValidaNota.exe
+C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\obj\Debug\ValidaNota.pdb

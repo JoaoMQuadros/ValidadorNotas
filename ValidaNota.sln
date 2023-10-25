@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidaNota", "ValidaNota\ValidaNota.csproj", "{723C2B93-23BE-4139-A825-32E0AF6E0D32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{723C2B93-23BE-4139-A825-32E0AF6E0D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723C2B93-23BE-4139-A825-32E0AF6E0D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723C2B93-23BE-4139-A825-32E0AF6E0D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723C2B93-23BE-4139-A825-32E0AF6E0D32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7EB4650-AD95-49BA-A31F-FF235A5B5211}
+	EndGlobalSection
+EndGlobal
