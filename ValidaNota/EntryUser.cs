@@ -3,7 +3,7 @@
 public class Aluno
 {
     public string AlunoNome { get; set;}
-    List<Notas> notas = new List<Notas>();
+    public List<Notas> notas = new List<Notas>();
 
 }
 public class Notas

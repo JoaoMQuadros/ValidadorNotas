@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System;using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Security.Cryptography.X509Certificates;
@@ -13,27 +12,22 @@ namespace ValidaNota
         
         static void Main(string[] args)
         {
-            ExibeInicio exibeInicio = new ExibeInicio();
-            List<Notas> lstNotas = new List<Notas>();
+//----------Importando Classes :  ----------------------------------------------------------------------------------------------------------------------  
+                
+            Aluno aluno = new Aluno();        
+            List<Aluno> alunos = new List<Aluno>();
+            ExibeInicio exibeConsole = new ExibeInicio();          
             RecolheEntrada recolhe = new RecolheEntrada();
+            
 
-
-
-
-            exibeInicio.ImprimeInicio();
-
-            recolhe.RecolheNome();
-            recolhe.RecolheNota();
-            recolhe.Imprime();
-
-                  
-                                            
-
-
-
+//----------Metódos :  ---------------------------------------------------------------------------------------------------------------------------------    
+            exibeConsole.ImprimeInicio();
+            recolhe.SolicitaEntrada(aluno, recolhe);
+            exibeConsole.Imprime(aluno);
+            alunos.Add(aluno);           
+ //----------FIM : ---------------------------------------------------------------------------------------------------------------------------------------
             Console.ReadLine();
-        }
-
-
+        }   
+             
     }
 }

@@ -5,3 +5,9 @@ C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\obj\D
 C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\obj\Debug\ValidaNota.csproj.CoreCompileInputs.cache
 C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\obj\Debug\ValidaNota.exe
 C:\Users\Joaom\Documents\Visual Studio 2022\Projetos\ValidaNota\ValidaNota\obj\Debug\ValidaNota.pdb
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas\ValidaNota\bin\Debug\ValidaNota.exe.config
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas\ValidaNota\obj\Debug\ValidaNota.exe
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas\ValidaNota\obj\Debug\ValidaNota.pdb
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas\ValidaNota\obj\Debug\ValidaNota.csprojResolveAssemblyReference.cache
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas\ValidaNota\bin\Debug\ValidaNota.exe
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas\ValidaNota\bin\Debug\ValidaNota.pdb

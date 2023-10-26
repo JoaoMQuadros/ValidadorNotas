@@ -4,39 +4,52 @@ using System.Globalization;
 
 public class RecolheEntrada
 {
-   public void RecolheNome()
+//Recolhe Nome  //-------------------------------------------------------------------------------------------
+    public void RecolheNome(Aluno aluno)
     {
-        Aluno aluno = new Aluno();
-        Console.WriteLine("Qual o Nome do Aluno?");
-        aluno.AlunoNome = Console.ReadLine();
-        
+            Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+            Console.WriteLine("Qual o Nome do Aluno?");
+            Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+            aluno.AlunoNome = Console.ReadLine();
+            Console.Clear();            
     }
-    
-   public void RecolheNota() 
+
+//Recolhe Notas   //-------------------------------------------------------------------------------------------
+    public void RecolheNota(Aluno aluno)
     {
-        Aluno aluno = new Aluno();
+        ValidadorCaracter validaNota = new ValidadorCaracter();
+
         Notas notas = new Notas();
-        List<Notas> lstNotas = new List<Notas>();
-
+        Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         Console.WriteLine($"Qual a nota do {aluno.AlunoNome} em Matemática ?");
-        notas.NotaMat = Convert.ToInt32( Console.ReadLine() );
+        notas.NotaMat = validaNota.ValidaNotas();
         Console.WriteLine($"Qual a nota do {aluno.AlunoNome} em Português ?");
-        notas.NotaPor = Convert.ToInt32( Console.ReadLine() );  
+        notas.NotaPor = validaNota.ValidaNotas();
         Console.WriteLine($"Qual a nota do {aluno.AlunoNome} em Fisíca ?");
-        notas.NotaFis = Convert.ToInt32( Console.ReadLine() );  
+        notas.NotaFis = validaNota.ValidaNotas();
         Console.WriteLine($"Qual a nota do {aluno.AlunoNome} em História ?");
-        notas.NotaHis = Convert.ToInt32( Console.ReadLine() );
-        lstNotas.Add( notas );        
-
+        notas.NotaHis = validaNota.ValidaNotas();
+        aluno.notas.Add(notas);
+        Console.Clear();       
     }
+    //-------------------------------------------------------------------------------------------
 
-    public void Imprime(List<Notas> notas)
+    public void SolicitaEntrada(Aluno aluno, RecolheEntrada recolhe)
     {
-        Aluno aluno = new Aluno();        
-        for(int i = 0; i < 0; i++)
+        Console.WriteLine("Quantos Alunos serão incritos ?: ");
+        int qntAluno = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Quantos vezes será divido a Média ?: ");        
+        int qntMes = Convert.ToInt32(Console.ReadLine());
+        Console.Clear();
+        for (int i = 0; i < qntAluno; i++)
         {
-            Console.WriteLine($"As notas para o {aluno.AlunoNome} foram as seguintes n\"Matemática:{notas[i].NotaMat} n\"Português: {notas[i].NotaPor}n\"" +
-                $"Fisíca: {notas[i].NotaFis}n\"Histórica: {notas[i].NotaHis}");
-        }     
+            recolhe.RecolheNome(aluno);
+            {
+                for (int j = 0; j < qntMes; j++)
+                {
+                    recolhe.RecolheNota(aluno);
+                }
+            }
+        }      
     }
 }

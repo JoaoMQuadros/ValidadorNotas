@@ -8,10 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ValidaNota</RootNamespace>
     <AssemblyName>ValidaNota</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,9 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Whiles.cs" />
+    <Compile Include="ValidaEntradas.cs" />
     <Compile Include="RecolheEntrada.cs" />
     <Compile Include="ExibeConsole.cs" />
-    <Compile Include="ParemEntrada.cs" />
+    <Compile Include="EntryUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
