@@ -1,4 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
 
 public class ExibeInicio
 {
@@ -9,17 +15,16 @@ public class ExibeInicio
         Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
     }
 
-    public void Imprime(Aluno aluno)
+    public void Imprime(List<Aluno> teste)
     {
-        foreach (var alunos in aluno.notas)
+        foreach (var aluno in teste)
         {
-            Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-            Console.WriteLine($"As notas do {aluno.AlunoNome} foram as seguintes:");
-            Console.WriteLine($"Matemática: {alunos.NotaMat} ");
-            Console.WriteLine($"Português: {alunos.NotaPor}");
-            Console.WriteLine($"Histórica: {alunos.NotaHis}");
-            Console.WriteLine($"Fisíca: {alunos.NotaFis}");
-        };
-    }
+            Console.WriteLine($"Os nomes dos Alunos são {aluno.AlunoNome}");
 
+            foreach (var nota in aluno.notas)
+            {
+                Console.WriteLine($"Matemática : {nota.NotaMat} | Português : {nota.NotaPor} | Fisíca {nota.NotaFis} | História {nota.NotaHis}");
+            }            
+        }        
+    }
 }

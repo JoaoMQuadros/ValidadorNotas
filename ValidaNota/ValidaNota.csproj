@@ -44,11 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Whiles.cs" />
-    <Compile Include="ValidaEntradas.cs" />
+    <Compile Include="Calcula.cs" />
+    <Compile Include="ValidaEntrada.cs" />
     <Compile Include="RecolheEntrada.cs" />
     <Compile Include="ExibeConsole.cs" />
-    <Compile Include="EntryUser.cs" />
+    <Compile Include="Parametros.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

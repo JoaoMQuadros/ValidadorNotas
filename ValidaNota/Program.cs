@@ -15,16 +15,17 @@ namespace ValidaNota
 //----------Importando Classes :  ----------------------------------------------------------------------------------------------------------------------  
                 
             Aluno aluno = new Aluno();        
-            List<Aluno> alunos = new List<Aluno>();
+            List<Aluno> lstAlunos = new List<Aluno>();
             ExibeInicio exibeConsole = new ExibeInicio();          
             RecolheEntrada recolhe = new RecolheEntrada();
             
 
 //----------Metódos :  ---------------------------------------------------------------------------------------------------------------------------------    
             exibeConsole.ImprimeInicio();
-            recolhe.SolicitaEntrada(aluno, recolhe);
-            exibeConsole.Imprime(aluno);
-            alunos.Add(aluno);           
+            recolhe.teste(recolhe, lstAlunos);
+            exibeConsole.Imprime(lstAlunos);
+
+            lstAlunos.Add(aluno);           
  //----------FIM : ---------------------------------------------------------------------------------------------------------------------------------------
             Console.ReadLine();
         }   

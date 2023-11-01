@@ -35,5 +35,19 @@ public class ValidadorCaracter
             return notaAlunoValida;
         }
     }
+
+    //Metodo de não deixar carecter entrar 
+
+    //public void BloqCarecter()
+    //{
+    //    double number;
+    //    Console.Write("Enter the cost of the item: ");
+    //    while (!double.TryParse(Console.ReadLine(), out number))
+    //    {
+    //        Console.Write("This is not valid input. Please enter an integer value: ");
+    //    }
+
+    //    Console.Write("The item cost is: {0}", number);
+    //}
 };
 

@@ -4,25 +4,23 @@ using System.Globalization;
 
 public class RecolheEntrada
 {
-//Recolhe Nome  //-------------------------------------------------------------------------------------------
-    public void RecolheNome(Aluno aluno)
+    //Recolhe Nome  ==========================================================================================================================================
+    public void RecolheNome(Aluno aluno, List<Aluno> nomes)
     {
-            Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-            Console.WriteLine("Qual o Nome do Aluno?");
-            Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-            aluno.AlunoNome = Console.ReadLine();
-            Console.Clear();            
+        Console.WriteLine("Qual o nome do Aluno(a) a ser inscrito ?");
+        aluno.AlunoNome = Console.ReadLine();
+    
+
     }
 
-//Recolhe Notas   //-------------------------------------------------------------------------------------------
+    //Recolhe Notas  ===========================================================================================================================================
     public void RecolheNota(Aluno aluno)
     {
         ValidadorCaracter validaNota = new ValidadorCaracter();
-
         Notas notas = new Notas();
         Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         Console.WriteLine($"Qual a nota do {aluno.AlunoNome} em Matemática ?");
-        notas.NotaMat = validaNota.ValidaNotas();
+        notas.NotaMat = validaNota.ValidaNotas();        
         Console.WriteLine($"Qual a nota do {aluno.AlunoNome} em Português ?");
         notas.NotaPor = validaNota.ValidaNotas();
         Console.WriteLine($"Qual a nota do {aluno.AlunoNome} em Fisíca ?");
@@ -30,26 +28,30 @@ public class RecolheEntrada
         Console.WriteLine($"Qual a nota do {aluno.AlunoNome} em História ?");
         notas.NotaHis = validaNota.ValidaNotas();
         aluno.notas.Add(notas);
+        
         Console.Clear();       
     }
-    //-------------------------------------------------------------------------------------------
-
-    public void SolicitaEntrada(Aluno aluno, RecolheEntrada recolhe)
+    //Para Saber a média dos Alunos ===========================================================================================================================
+    public void teste(RecolheEntrada recolhe, List<Aluno> lstAlunos)
     {
-        Console.WriteLine("Quantos Alunos serão incritos ?: ");
-        int qntAluno = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Quantos vezes será divido a Média ?: ");        
-        int qntMes = Convert.ToInt32(Console.ReadLine());
-        Console.Clear();
-        for (int i = 0; i < qntAluno; i++)
+
+
+        Console.WriteLine("Quantos Alunos(a) serão inscritos no Validador ?");
+        int qntAlunos = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Quantas vezes as notas serão dividas para se ter a média ?");
+        int qntNotas = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 0; i < qntAlunos; i++)
         {
-            recolhe.RecolheNome(aluno);
+            Aluno adiciona = new Aluno();
+            recolhe.RecolheNome(adiciona, lstAlunos);
+            lstAlunos.Add(adiciona);
             {
-                for (int j = 0; j < qntMes; j++)
+                for (int j = 0; j < qntNotas; j++)
                 {
-                    recolhe.RecolheNota(aluno);
+                    recolhe.RecolheNota(adiciona);
                 }
             }
-        }      
+        }
     }
 }
