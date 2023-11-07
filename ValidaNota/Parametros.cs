@@ -8,9 +8,9 @@ public class Aluno
 }
 public class Notas
 {
-    public int NotaMat { get; set;}
-    public int NotaPor { get; set; }
-    public int NotaHis { get; set; }
-    public int NotaFis { get; set; }
+    public double NotaMat { get; set;}
+    public double NotaPor { get; set; }
+    public double NotaHis { get; set; }
+    public double NotaFis { get; set; }
 
 }

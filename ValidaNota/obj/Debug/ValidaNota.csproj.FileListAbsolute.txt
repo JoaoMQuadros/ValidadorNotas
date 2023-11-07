@@ -17,3 +17,9 @@ C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas4\ValidaNota\obj\Debug\ValidaNo
 C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas4\ValidaNota\bin\Debug\ValidaNota.exe
 C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas4\ValidaNota\bin\Debug\ValidaNota.pdb
 C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas4\ValidaNota\obj\Debug\ValidaNota.csprojResolveAssemblyReference.cache
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas5\ValidaNota\bin\Debug\ValidaNota.exe.config
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas5\ValidaNota\obj\Debug\ValidaNota.exe
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas5\ValidaNota\obj\Debug\ValidaNota.pdb
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas5\ValidaNota\bin\Debug\ValidaNota.exe
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas5\ValidaNota\bin\Debug\ValidaNota.pdb
+C:\Users\JOAO.QUADROS\Source\Repos\ValidadorNotas5\ValidaNota\obj\Debug\ValidaNota.csprojResolveAssemblyReference.cache

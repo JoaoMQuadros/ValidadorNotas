@@ -9,45 +9,43 @@ using System.Threading.Tasks;
 
 public class ValidadorCaracter
 {
-    public int ValidaNotas()
-    {
-        int notaAlunoValida;
-        string notaAluno;
-        bool validEntry = false;
-        {
-            do
-            {
-                notaAluno = Console.ReadLine();
-                int.TryParse(notaAluno, out notaAlunoValida);
-                if (notaAluno != null)
-                {
-                    if (Convert.ToDecimal(notaAluno) >= 0 && Convert.ToDecimal(notaAluno) <= 10)
-                    {
-                        validEntry = true;
 
-                    }
-                    else
-                    {
-                        Console.WriteLine("Você não digitou a nota correga, faça novamente.");
-                    }
-                }
-            } while (validEntry == false);
-            return notaAlunoValida;
+    public double ValidaNotas()
+    {
+        double notaValidada;
+        bool validador = false;
+        double recebeNotaValida;
+        do 
+        {
+            string recebeaNota = Console.ReadLine();
+            if(double.TryParse(recebeaNota, out notaValidada) && notaValidada >= 0 && notaValidada <= 10)
+            {
+                validador = true;
+                Console.WriteLine("Nota registrada !");
+            }
+            else
+            {
+                Console.WriteLine("Por favor, apenas valores entre 0 a 10 !");
+            }           
         }
+        while (validador == false) ;
+        return notaValidada;
+        
     }
+    
+
 
     //Metodo de não deixar carecter entrar 
 
-    //public void BloqCarecter()
-    //{
-    //    double number;
-    //    Console.Write("Enter the cost of the item: ");
-    //    while (!double.TryParse(Console.ReadLine(), out number))
-    //    {
-    //        Console.Write("This is not valid input. Please enter an integer value: ");
-    //    }
+    public double BloqCarecter()
+    {
+        double number;
+        while (!double.TryParse(Console.ReadLine(), out number))
+        {
+            Console.Write("Por favor, digíte apenas números !!");
+        }
+        return number;
 
-    //    Console.Write("The item cost is: {0}", number);
-    //}
+    }
 };
 

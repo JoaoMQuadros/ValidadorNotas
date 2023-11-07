@@ -34,12 +34,12 @@ public class RecolheEntrada
     //Para Saber a média dos Alunos ===========================================================================================================================
     public void teste(RecolheEntrada recolhe, List<Aluno> lstAlunos)
     {
-
+        ValidadorCaracter validaEntrada = new ValidadorCaracter();
 
         Console.WriteLine("Quantos Alunos(a) serão inscritos no Validador ?");
-        int qntAlunos = Convert.ToInt32(Console.ReadLine());
+        int qntAlunos = Convert.ToInt32(validaEntrada.BloqCarecter());
         Console.WriteLine("Quantas vezes as notas serão dividas para se ter a média ?");
-        int qntNotas = Convert.ToInt32(Console.ReadLine());
+        int qntNotas = Convert.ToInt32(validaEntrada.BloqCarecter());
 
         for (int i = 0; i < qntAlunos; i++)
         {
