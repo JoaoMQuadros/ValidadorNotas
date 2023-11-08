@@ -15,16 +15,18 @@ public class ExibeInicio
         Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
     }
 
-    public void Imprime(List<Aluno> teste)
+    public void ExibeBoletim(List<Aluno> nameAndAvarange)
     {
-        foreach (var aluno in teste)
+        foreach (var aluno in nameAndAvarange)
         {
-            Console.WriteLine($"Os nomes dos Alunos são {aluno.AlunoNome}");
-
+            Console.WriteLine($"Alun(a):{aluno.AlunoNome}, segue abaixo registro de notas:");
+            Console.WriteLine();
             foreach (var nota in aluno.notas)
             {
-                Console.WriteLine($"Matemática : {nota.NotaMat} | Português : {nota.NotaPor} | Fisíca {nota.NotaFis} | História {nota.NotaHis}");
-            }            
-        }        
+                Console.WriteLine($"Matemática : {nota.NotaMat} | Português : {nota.NotaPor} | Fisíca : {nota.NotaFis} | História : {nota.NotaHis}");
+                Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
+                
+            }
+        }
     }
 }
