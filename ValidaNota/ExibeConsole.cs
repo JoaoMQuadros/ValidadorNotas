@@ -26,13 +26,11 @@ public class ExibeInicio
             {
                 Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine($"Matemática : {nota.NotaMat} | Português : {nota.NotaPor} | Fisíca : {nota.NotaFis} | História : {nota.NotaHis}");
-                Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
             }
             foreach (var media in aluno.media)
             {
                 Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine($"Média em Matemática : {media.MediaMat} |Média em  Português : {media.MediaPor} |Média em  Fisíca : {media.MediaFis} |Média em  História : {media.MediaHis}");
-                Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
             }
         }
     }

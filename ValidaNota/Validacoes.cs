@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 public class Validacao
 {
     //Metodo Valida entrada (Somente número entre 1 a 10 e Caracteres)
-    public double ValidaNotas()
+    public double ValidNote()
     {
         double notaValidada;
         bool validador = false;
@@ -33,7 +33,7 @@ public class Validacao
     }   
 
     //Metodo de não deixar carecter entrar (Bloqueia Numero)
-    public double BloqChar()
+    public double BloqEntryChar()
     {
         double number;
         while (!double.TryParse(Console.ReadLine(), out number))
@@ -42,10 +42,15 @@ public class Validacao
         }
         return number;
     }
-    //public string BloqNum()
-    //{
-    //    string 
-    //}
 
+    public char BloqEntryNum()
+    {
+        char teste;
+        while (!char.TryParse(Console.ReadLine(), out teste))
+        {
+            Console.WriteLine("Digite apenas letras!!");
+        }
+        return teste;
+    }
 };
 
