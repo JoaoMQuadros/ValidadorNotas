@@ -24,13 +24,13 @@ public class Calculo
                 somaNotasMat += notas.NotaMat;
                 somaNotasPor += notas.NotaMat;
                 somaNotasHis += notas.NotaMat;
-                somaNotasFis += notas.NotaMat;
-                //Realiza a média das notas que estão adicionadas na lista;
-                addMedia.MediaMat = somaNotasMat / lstAlunoNotasMedia.Count;
-                addMedia.MediaPor = somaNotasPor / lstAlunoNotasMedia.Count;
-                addMedia.MediaHis = somaNotasHis / lstAlunoNotasMedia.Count;
-                addMedia.MediaFis = somaNotasFis / lstAlunoNotasMedia.Count;
+                somaNotasFis += notas.NotaMat;                
             }
+            //Realiza a média das notas que estão adicionadas na lista;
+            addMedia.MediaMat = somaNotasMat / expNotas.notas.Count;
+            addMedia.MediaPor = somaNotasPor / expNotas.notas.Count;
+            addMedia.MediaHis = somaNotasHis / expNotas.notas.Count;
+            addMedia.MediaFis = somaNotasFis / expNotas.notas.Count;
             //Adiciona a media da lista de notas na lista de média;
             expNotas.media.Add(addMedia);
         }

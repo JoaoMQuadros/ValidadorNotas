@@ -37,9 +37,9 @@ public class RecolheEntrada
         ColetaDivMediaQtAluno recolheDivisor = new ColetaDivMediaQtAluno();
         Validacao validaEntrada = new Validacao();
         Console.WriteLine("Quantos Alunos(a) serão inscritos no Validador ?");
-        recolheDivisor.qntAlunos = Convert.ToInt32(validaEntrada.BloqCarecter());
+        recolheDivisor.qntAlunos = Convert.ToInt32(validaEntrada.BloqChar());
         Console.WriteLine("Quantas vezes as notas serão dividas para se ter a média ?");
-        recolheDivisor.qntNotas = Convert.ToInt32(validaEntrada.BloqCarecter());
+        recolheDivisor.qntNotas = Convert.ToInt32(validaEntrada.BloqChar());
         for (int i = 0; i < recolheDivisor.qntAlunos; i++)
         {
             Aluno adiciona = new Aluno();

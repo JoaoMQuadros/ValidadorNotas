@@ -33,7 +33,7 @@ public class Validacao
     }   
 
     //Metodo de não deixar carecter entrar (Bloqueia Numero)
-    public double BloqCarecter()
+    public double BloqChar()
     {
         double number;
         while (!double.TryParse(Console.ReadLine(), out number))
@@ -41,9 +41,11 @@ public class Validacao
             Console.Write("Por favor, digíte apenas números !!");
         }
         return number;
-
     }
-
+    //public string BloqNum()
+    //{
+    //    string 
+    //}
 
 };
 
