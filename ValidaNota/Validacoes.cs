@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 public class Validacao
 {
     //Metodo Valida entrada (Somente número entre 1 a 10 e Caracteres)
-
     public double ValidaNotas()
     {
         double notaValidada;
@@ -34,7 +33,6 @@ public class Validacao
     }   
 
     //Metodo de não deixar carecter entrar (Bloqueia Numero)
-
     public double BloqCarecter()
     {
         double number;
@@ -45,6 +43,7 @@ public class Validacao
         return number;
 
     }
-   
+
+
 };
 

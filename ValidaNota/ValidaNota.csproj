@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calcula.cs" />
-    <Compile Include="ValidaEntrada.cs" />
+    <Compile Include="Validacoes.cs" />
     <Compile Include="RecolheEntrada.cs" />
     <Compile Include="ExibeConsole.cs" />
     <Compile Include="Parametros.cs" />
