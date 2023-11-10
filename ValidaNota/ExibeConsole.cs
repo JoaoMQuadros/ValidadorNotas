@@ -15,9 +15,9 @@ public class ExibeInicio
         Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
     }
 
-    public void ExibeBoletim(List<Aluno> nameAndAvarange)
+    public void ExibeBoletim(List<Aluno> lstNomeNotaMedia)
     {
-        foreach (var aluno in nameAndAvarange)
+        foreach (var aluno in lstNomeNotaMedia)
         {
             Console.WriteLine($"Alun(a):{aluno.AlunoNome}, segue abaixo registro de notas:");
             Console.WriteLine();
@@ -25,8 +25,13 @@ public class ExibeInicio
             {
                 Console.WriteLine($"Matemática : {nota.NotaMat} | Português : {nota.NotaPor} | Fisíca : {nota.NotaFis} | História : {nota.NotaHis}");
                 Console.WriteLine("---------------------------------------------------------------------------------------------------------------");
-                
+            }
+            foreach (var media in aluno.media)
+            {
+                Console.WriteLine($"Média em Matemática : {media.MediaMat} |Média em  Português : {media.MediaPor} |Média em  Fisíca : {media.MediaFis} |Média em  História : {media.MediaHis}");
             }
         }
+
     }
+    
 }

@@ -6,44 +6,31 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-public class CalculaMedia
+public class Calculo
 {
-    public void MediaNotas(List<Aluno> lstAlunos)
+    public void ExibeMedia(List<Aluno> lstAlunoNotasMedia)
     {
-        List<Media> media = new List<Media>();
-        Media acessaMedia = new Media();
-        //Recebe o nome do Aluno;
-        string nomeAluno = "";
-        //Recebe as notas da Listas;
-        double notaMat = 0;
-        double notaPor = 0;
-        double notaHis = 0;
-        double notaFis = 0;
-        //Soma das notas divida pela quantidade de vezes, para se ter média;
-        double mediaMat = 0;
-        double mediaPor = 0;
-        double mediaHis = 0;
-        double mediaFis = 0;
-        //Adicionando as médias a lista
-     
-        // Loops para extrair o nome do Aluno;
-        foreach (var alunos in lstAlunos)
+        foreach (var expNotas in lstAlunoNotasMedia)
         {
-            nomeAluno += alunos.AlunoNome;
-            //Loops para extrair as notas to Aluno;
-            foreach (var notMateria in alunos.notas)
+            Media addMedia = new Media();
+            double somaNotasMat = 0;
+            double somaNotasPor = 0;
+            double somaNotasHis = 0;
+            double somaNotasFis = 0;
+            foreach (var notas in expNotas.notas)
             {
-                notaMat += notMateria.NotaMat;
-                notaPor += notMateria.NotaPor;
-                notaHis += notMateria.NotaHis;
-                notaFis += notMateria.NotaFis;
+                somaNotasMat += notas.NotaMat;
+                somaNotasPor += notas.NotaMat;
+                somaNotasHis += notas.NotaMat;
+                somaNotasFis += notas.NotaMat;
+
+                addMedia.MediaMat = somaNotasMat / lstAlunoNotasMedia.Count;
+                addMedia.MediaPor = somaNotasPor / lstAlunoNotasMedia.Count;
+                addMedia.MediaHis = somaNotasHis / lstAlunoNotasMedia.Count;
+                addMedia.MediaFis = somaNotasFis / lstAlunoNotasMedia.Count;
             }
-            //Realizar o calculo da média;
-            acessaMedia.mediaMat = notaMat / alunos.notas.Count;
-            acessaMedia.mediaPor = notaPor / alunos.notas.Count;
-            acessaMedia.mediaHis = notaHis / alunos.notas.Count;
-            acessaMedia.mediaFis = notaFis / alunos.notas.Count;                      
+            expNotas.media.Add(addMedia);
         }
-        media.Add(acessaMedia);
+
     }
 }

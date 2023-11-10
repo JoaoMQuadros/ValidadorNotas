@@ -13,23 +13,29 @@ namespace ValidaNota
         static void Main(string[] args)
         {
     //----------Importando Classes :  ----------------------------------------------------------------------------------------------------------------------  
-                
-            Aluno aluno = new Aluno();
-            CalculaMedia calcula = new CalculaMedia();  
-            List<Aluno> lstAlunos = new List<Aluno>();            
-            ExibeInicio exibeConsole = new ExibeInicio();          
+           List<Aluno> lstAlunos = new List<Aluno>();            
+
+
+            ExibeInicio exibeConsole = new ExibeInicio();
+
+            Calculo calculo = new Calculo();
+
             RecolheEntrada recolhe = new RecolheEntrada();
+
             
 
     //----------Metódos :  ---------------------------------------------------------------------------------------------------------------------------------    
             exibeConsole.ImprimeInicio();
-            recolhe.teste(recolhe, lstAlunos);
-            exibeConsole.ExibeBoletim(lstAlunos);
-            exibeConsole.ExibeAprovacao(lstAlunos);
-            calcula.MediaNotas(lstAlunos);
-            calcula.MediaNotas(lstAlunos);
 
-            lstAlunos.Add(aluno);           
+            recolhe.teste(recolhe, lstAlunos);
+
+            calculo.ExibeMedia(lstAlunos);
+
+            exibeConsole.ExibeBoletim(lstAlunos);
+           
+
+         
+              
      //----------FIM : ---------------------------------------------------------------------------------------------------------------------------------------
             Console.ReadLine();
         }   

@@ -7,8 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public class ValidadorCaracter
+public class Validacao
 {
+    //Metodo Valida entrada (Somente número entre 1 a 10 e Caracteres)
 
     public double ValidaNotas()
     {
@@ -29,13 +30,10 @@ public class ValidadorCaracter
             }           
         }
         while (validador == false) ;
-        return notaValidada;
-        
-    }
-    
+        return notaValidada;       
+    }   
 
-
-    //Metodo de não deixar carecter entrar 
+    //Metodo de não deixar carecter entrar (Bloqueia Numero)
 
     public double BloqCarecter()
     {
@@ -47,5 +45,6 @@ public class ValidadorCaracter
         return number;
 
     }
+   
 };
 

@@ -6,6 +6,8 @@ public class Aluno
     public List<Notas> notas = new List<Notas>();
     public List<Media> media = new List<Media>();
 
+
+
 }
 
 public class Notas
@@ -14,12 +16,20 @@ public class Notas
     public double NotaPor { get; set; }
     public double NotaHis { get; set; }
     public double NotaFis { get; set; }
+
 }
 
 public class Media
 {
-    public double mediaMat { get; set; }
-    public double mediaPor { get; set; }
-    public double mediaHis { get; set; }
-    public double mediaFis { get; set; }
+    public double MediaMat { get; set; }
+    public double MediaPor { get; set; }
+    public double MediaHis { get; set; }
+    public double MediaFis { get; set; }
+}
+
+
+public class ColetaDivMediaQtAluno
+{
+    public int qntNotas { get; set; }
+    public int qntAlunos { get; set; }
 }
